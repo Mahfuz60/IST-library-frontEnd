@@ -1,4 +1,5 @@
 import React from "react";
+import BookCounter from "../BookCounter/BookCounter";
 import HomePage from "../HomePage/HomePage";
 import NavBar from "../NavBar/NavBar";
 
@@ -7,6 +8,7 @@ function Home(props) {
     <div>
       <NavBar></NavBar>
       <HomePage></HomePage>
+      <BookCounter></BookCounter>
     </div>
   );
 }
