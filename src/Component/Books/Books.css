@@ -1,0 +1,6 @@
+.backgroundBooks {
+  background-image: url(../../images/backgroundImg.jpg) !important;
+  position: relative;
+  height: auto;
+  width: auto !important;
+}
