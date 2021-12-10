@@ -1,16 +1,22 @@
-.bookCounter{
-    background-color: rgb(192, 192, 188);
+.bookCounter {
+  background-color: #252d31;
 }
-.container h3{
-    font-size:50px;
-    font-weight:bold;
+.container h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
 }
-.container h5{
-    font-size:40px;
-    font-weight:bold;
+.container h5 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
 }
-.container h4{
-    font-size:30px;
-    font-weight:bold;
-    
+.container h4 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  border-bottom: 2px solid transparent;
+}
+.container h4:hover {
+  border-bottom: 2px solid rgb(218, 89, 3);
 }
