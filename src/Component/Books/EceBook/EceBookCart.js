@@ -24,7 +24,7 @@ function EceBookCart({ book }) {
                 width: "200px",
                 fontSize: "20px",
                 textDecoration: "none",
-                marginBottom:"5px"
+                marginBottom: "5px",
               }}
             >
               {" "}

@@ -1,7 +1,17 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
-import mapImg from "../../images/map.png";
+import {
+  faFacebook,
+  faGoogle,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelopeOpen,
+  faPaperPlane,
+} from "@fortawesome/free-regular-svg-icons";
+import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
@@ -9,12 +19,12 @@ function Footer() {
       <Container fluid>
         <Row fluid className="top">
           <h5>
-            <b>Developed By:Md. Redoy Ahmed || Md. Mahfuz Alam </b>
+            <b>Developed By:Md. Redoy Ahmed | Md. Mahfuz Alam </b>
           </h5>
         </Row>
 
         <Row className="body">
-          <Col xs={4} className="col">
+          <Col id="about" xs={3} className="col">
             <h3>
               {" "}
               <b> About Us </b>{" "}
@@ -54,7 +64,7 @@ function Footer() {
             </ul>
           </Col>
 
-          <Col xs={2} className="col">
+          <Col id="contact" xs={2} className="col">
             <h3>
               {" "}
               <b> Quick Links </b>{" "}
@@ -64,14 +74,14 @@ function Footer() {
                 {" "}
                 <li>
                   {" "}
-                  <p> IST Website </p>{" "}
+                  <h6> IST Website </h6>{" "}
                 </li>{" "}
               </a>
               <a className="links" href="https://www.nu.ac.bd/" target="blank">
                 {" "}
                 <li>
                   {" "}
-                  <p> National University </p>{" "}
+                  <h6> National University </h6>{" "}
                 </li>{" "}
               </a>
               <a
@@ -82,7 +92,7 @@ function Footer() {
                 {" "}
                 <li>
                   {" "}
-                  <p> Result Archive </p>{" "}
+                  <h6> Result Archive </h6>{" "}
                 </li>{" "}
               </a>
               <a
@@ -93,24 +103,42 @@ function Footer() {
                 {" "}
                 <li>
                   {" "}
-                  <p> Student Form Fill Up </p>
+                  <h6> Student Form Fill Up </h6>
                 </li>{" "}
               </a>
             </ul>
           </Col>
 
-          <Col className="map">
+          <Col id="contact" className="contactUs" xs={3}>
             <h3>
               {" "}
-              <b>Find Us</b>{" "}
+              <b>Contacts Us</b>{" "}
             </h3>
-            <a href="https://goo.gl/maps/TfHgFdH3W2iBC5nA8" target="blank">
-              <Image
-                style={{ height: "300px", width: "300px" }}
-                src={mapImg}
-                thumbnail
-              />
-            </a>
+            <ul>
+              <li>
+                <FontAwesomeIcon
+                  className="contact-icon"
+                  icon={faMapMarkerAlt}
+                />
+                House # 54, Road # 15/A (Old-26) Dhanmondi (East of Shankar Bus
+                Stand) Dhaka-1209.
+              </li>
+              <li>
+                <FontAwesomeIcon className="contact-icon" icon={faPhoneAlt} />
+                +88 02-55029352
+              </li>
+              <li>
+                <FontAwesomeIcon className="contact-icon" icon={faPhoneAlt} />
+                +88 02-55029353
+              </li>
+              <li>
+                <FontAwesomeIcon
+                  className="contact-icon"
+                  icon={faEnvelopeOpen}
+                />
+                info@ist.edu.bd
+              </li>
+            </ul>
           </Col>
         </Row>
 

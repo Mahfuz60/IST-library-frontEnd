@@ -61,16 +61,16 @@ function EceBook(props) {
   ];
 
   return (
-    <section className=" backgroundBooks">
+    <section  className=" backgroundBooks">
       <div className="mt-3 pt-3">
-        <div className="text-center">
+        <div  className="text-center">
           <h2 className="text-light " style={{ fontSize: "65px" }}>
             ECE BookList
           </h2>
         </div>
         <div className="row justify-content-center d-flex">
           {eceBooks?.map((book) => (
-            <EceBookCart book={book}></EceBookCart>
+            <EceBookCart id="eceBook" book={book}></EceBookCart>
           ))}
         </div>
       </div>
