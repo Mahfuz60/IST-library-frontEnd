@@ -1,7 +1,14 @@
 import React from "react";
 import computer from "../../../images/computer.png";
+import fundamental from "../../../images/fundamental.png";
+import marketing from "../../../images/marketing.png";
+import economics from "../../../images/economics.jpg";
+import financial from "../../../images/financial.jpg";
+import statistics from "../../../images/statistics.jpg";
 import BbaBookCart from "./BbaBookCart";
 import "../Books.css";
+import NavBar from "../../NavBar/NavBar";
+import Footer from "../../Footer/Footer";
 
 function BbaBook(props) {
   const bbaBooks = [
@@ -15,41 +22,48 @@ function BbaBook(props) {
     },
     {
       id: 2,
-      name: "",
-      author: "",
-      coverPic2: "",
+      name: "Fundamentals of Corporate Finance",
+      author: "Richard A. Brealey",
+      coverPic2: fundamental,
+      pdfBook:
+        "https://drive.google.com/uc?export=download&id=1xISPTT5MoBl03iY3FUsYJPc8myihMIhY",
     },
     {
       id: 3,
-      name: "",
-      author: "",
-      coverPic2: "",
+      name: "Marketing Management",
+      author: "Philip Kotler",
+      coverPic2: marketing,
+      pdfBook:
+        "https://drive.google.com/uc?export=download&id=1XFn_M-x6EFMVPmYK4ch2bPi9EGrmedrF",
     },
     {
       id: 4,
-      name: "",
-      author: "",
-      coverPic2: "",
+      name: "Economics Micro & Macro",
+      author: "Ron PirayOff",
+      coverPic2: economics,
+      pdfBook:
+        "https://drive.google.com/uc?export=download&id=1JyINDOflGu7L4PuRVNwy6smd-zyGSZT9",
     },
     {
       id: 5,
-      name: "",
-      author: "",
-      coverPic2: "",
+      name: "Financial Management and Real Options",
+      author: "Jack Broyles",
+      coverPic2: financial,
       pdfBook:
-        "https://drive.google.com/uc?export=download&id=1ScV9vU-j28a9NlVuJudMnCP04CTUosaD",
+        "https://drive.google.com/uc?export=download&id=1W-J0PtqnCnpkfyU8QBwjh7DBJ8qH_Mck",
     },
     {
       id: 6,
-      name: "",
-      author: "",
-      coverPic2: "",
+      name: "Statistics for Environmental Science and Management",
+      author: "Bryan F.J. Manly",
+      coverPic2: statistics,
       pdfBook:
-        "https://drive.google.com/uc?export=download&id=13BpNFHYoRlY_jEabfgOqUG0h-MfnZkIe",
+        "https://drive.google.com/uc?export=download&id=1HHuAaki957pp1gNiuvZQsyPvF4-xeppc",
     },
   ];
   return (
     <section className=" backgroundBooks">
+      <NavBar></NavBar>
       <div className="mt-3 pt-3">
         <div className="text-center">
           <h2 className="text-light " style={{ fontSize: "65px" }}>
@@ -61,6 +75,7 @@ function BbaBook(props) {
             <BbaBookCart book={book}></BbaBookCart>
           ))}
         </div>
+        <Footer></Footer>
       </div>
     </section>
   );

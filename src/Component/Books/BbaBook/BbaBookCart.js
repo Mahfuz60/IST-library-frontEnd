@@ -2,17 +2,17 @@ import React from "react";
 
 function BbaBookCart({ book }) {
   return (
-    <div className="col-md-4 col-sm-2 text-center ">
+    <div className=" col-md-4 col-sm-2  text-center ">
       <div className="card shadow-sm  justify-content-center m-3">
         <div className="card-body bg-dark ">
           <img
-            style={{ height: "300px", width: "300px" }}
+            style={{ height: "250px", width: "250px" }}
             src={book.coverPic2}
             alt=""
           />
         </div>
         <div style={{ backgroundColor: "gray" }}>
-          <h4>{book.name}</h4>
+          <h5>{book.name}</h5>
           <h3>{book.author}</h3>
           <a download href={book.pdfBook}>
             <button

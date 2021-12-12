@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import CseBook from "./Component/Books/CseBook/CseBook";
@@ -13,10 +14,18 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home></Home>} />
           <Route path="/home" element={<Home></Home>} />
-          <Route path="/books" element={<Books></Books>}></Route>
-          <Route path="books/eceBooks" element={<EceBook></EceBook>} />
-          <Route path="books/cseBooks" element={<CseBook></CseBook>} />
-          <Route path="books/bbaBooks" element={<BbaBook></BbaBook>} />
+
+          {[
+            "/books/eceBooks" |
+              "books/eceBooks/" |
+              "books/cseBooks/" |
+              "books/bbaBooks",
+          ].map((path, index) => (
+            <Route path={path} key={index} element={<Books></Books>}></Route>
+          ))}
+          <Route path="/books/eceBooks" element={<EceBook></EceBook>} />
+          <Route path="/books/cseBooks" element={<CseBook></CseBook>} />
+          <Route path="/books/bbaBooks" element={<BbaBook></BbaBook>} />
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
       </Router>

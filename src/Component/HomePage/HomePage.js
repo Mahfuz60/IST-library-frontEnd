@@ -62,14 +62,14 @@ function HomePage(props) {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-70 h-25"
+                className="d-block w-70 h-25 "
                 src={slide2}
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-70 h-40"
+                className="d-block w-70 h-35"
                 src={slide3}
                 alt="Third slide"
               />

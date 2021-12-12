@@ -1,0 +1,11 @@
+.cardBackGround {
+  background-color: rgb(43, 46, 48) !important;
+}
+.regContainer {
+  background-color: rgb(120, 122, 122);
+}
+.cardBtn {
+  background-color: rgb(248, 143, 4);
+  font-size: 20px;
+  color:black
+}
