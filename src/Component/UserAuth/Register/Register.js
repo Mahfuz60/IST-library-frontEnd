@@ -8,7 +8,7 @@ function Register() {
   const [loginData, setLoginData] = useState({});
   const navigate = useNavigate();
 
-  const { user, registerUser, authError } = useAuth();
+  const { user, registerUser, authError } = useAuth;
 
   const handleOnBlur = (e) => {
     const field = e.target.name;
@@ -58,7 +58,7 @@ function Register() {
                 </Form.Group>
                 <Form.Group onBlur={handleOnBlur} id="password">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control
+                  <Form.Control type="password"
                     className="mb-2 w-50"
                     Placeholder="Enter Your Password"
                     required
@@ -66,7 +66,7 @@ function Register() {
                 </Form.Group>
                 <Form.Group onBlur={handleOnBlur} id="ConfirmPassword">
                   <Form.Label>ReType Password</Form.Label>
-                  <Form.Control
+                  <Form.Control type="password"
                     className="mb-2 w-50"
                     Placeholder="  Password Confirmation"
                     required
@@ -75,7 +75,10 @@ function Register() {
                 <Button className="cardBtn w-50 mt-2" type="submit">
                   SIGNUP
                 </Button>
-                <Link to="/login" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/login"
+                  style={{ textDecoration: "none", display: "block",marginTop: "20px" }}
+                >
                   <Button>Already Registered? Please SIGN IN</Button>
                 </Link>
               </Form>

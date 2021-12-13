@@ -52,7 +52,7 @@ function HomePage(props) {
           </div>
         </div>
         <div>
-          <Carousel variant="light">
+          {/* <Carousel variant="light">
             <Carousel.Item>
               <img
                 className="d-block w-70 h-25"
@@ -74,7 +74,7 @@ function HomePage(props) {
                 alt="Third slide"
               />
             </Carousel.Item>
-          </Carousel>
+          </Carousel> */}
         </div>
       </div>
     </section>

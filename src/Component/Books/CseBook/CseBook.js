@@ -10,7 +10,6 @@ import "../Books.css";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 
-
 function CseBook(props) {
   const cseBooks = [
     {
@@ -64,9 +63,7 @@ function CseBook(props) {
   ];
   return (
     <section className=" backgroundBooks">
-       <NavBar></NavBar>
       <div className="mt-3 pt-3">
-       
         <div className="text-center">
           <h2 className="text-light " style={{ fontSize: "65px" }}>
             CSE BookList
@@ -77,7 +74,6 @@ function CseBook(props) {
             <CseBookCart book={book}></CseBookCart>
           ))}
         </div>
-        <Footer></Footer>
       </div>
     </section>
   );

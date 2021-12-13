@@ -6,16 +6,13 @@ import "./Footer.css";
 //   faGoogle,
 //   faTwitter,
 // } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelopeOpen,
-  faPaperPlane,
-} from "@fortawesome/free-regular-svg-icons";
+import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <section className="footerBackground">
+    <section  className="footerBackground">
       <Container fluid>
         <Row fluid className="top">
           <h5>
@@ -23,8 +20,8 @@ function Footer() {
           </h5>
         </Row>
 
-        <Row className="body">
-          <Col id="about" xs={3} className="col">
+        <Row  className="body">
+          <Col  id="about" xs={3} className="col">
             <h3>
               {" "}
               <b> About Us </b>{" "}

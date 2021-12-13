@@ -7,8 +7,6 @@ import financial from "../../../images/financial.jpg";
 import statistics from "../../../images/statistics.jpg";
 import BbaBookCart from "./BbaBookCart";
 import "../Books.css";
-import NavBar from "../../NavBar/NavBar";
-import Footer from "../../Footer/Footer";
 
 function BbaBook(props) {
   const bbaBooks = [
@@ -54,7 +52,7 @@ function BbaBook(props) {
     },
     {
       id: 6,
-      name: "Statistics for Environmental Science and Management",
+      name: " Environmental Science and Management",
       author: "Bryan F.J. Manly",
       coverPic2: statistics,
       pdfBook:
@@ -63,19 +61,17 @@ function BbaBook(props) {
   ];
   return (
     <section className=" backgroundBooks">
-      <NavBar></NavBar>
       <div className="mt-3 pt-3">
         <div className="text-center">
           <h2 className="text-light " style={{ fontSize: "65px" }}>
             BBA BookList
           </h2>
         </div>
-        <div className="row justify-content-center d-flex">
+        <div className="row justify-content-center d-flex gy-3">
           {bbaBooks?.map((book) => (
             <BbaBookCart book={book}></BbaBookCart>
           ))}
         </div>
-        <Footer></Footer>
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Form, Button, Card, Alert, Container } from "react-bootstrap";
-import { useAuth } from "../AuthContext/AuthProvider";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 function Login(props) {
   const [loginData, setLoginData] = useState({});
-  const { user, loginUser, isLoading, authError } = useAuth();
+  const { user, loginUser, isLoading, authError } = useAuth;
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -47,25 +47,18 @@ function Login(props) {
                 </Form.Group>
                 <Form.Group onChange={handleOnChange} id="password">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control
+                  <Form.Control type="password"
                     className="mb-2 w-50"
                     Placeholder="Enter Your Password"
                     required
                   ></Form.Control>
                 </Form.Group>
-                <Form.Group onChange={handleOnChange} id="ConfirmPassword">
-                  <Form.Label>ReType Password</Form.Label>
-                  <Form.Control
-                    className="mb-2 w-50"
-                    Placeholder="  Password Confirmation"
-                    required
-                  ></Form.Control>
-                </Form.Group>
+
                 <Button className="cardBtn w-50 mt-2" type="submit">
                   LOGIN
                 </Button>
               </Form>
-              <p className="w-50 d-flex ">
+              <p className="w-50  d-block mt-3 ">
                 <Link to="/register" style={{ textDecoration: "none" }}>
                   <Button>New User? Please REGISTER</Button>
                 </Link>
