@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
-import {
-  faFacebook,
-  faGoogle,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faFacebook,
+//   faGoogle,
+//   faTwitter,
+// } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelopeOpen,
   faPaperPlane,

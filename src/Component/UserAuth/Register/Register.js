@@ -1,16 +1,33 @@
-import React, { useRef, useState } from "react";
-import { Card, Button, Form, Container } from "react-bootstrap";
+import React, { useState } from "react";
+import { Card, Button, Form, Container, Alert } from "react-bootstrap";
 import "../Register/Register.css";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
-function Register(props) {
-  const emailRef = useRef();
-  const nameRef = useRef();
-  const passwordRef = useRef();
-  const passwordConfirmRef = useRef();
-  //   const { signup } = useAuth()
-  //   const [error, setError] = useState("")
-  //   const [loading, setLoading] = useState(false)
-  //   const history = useHistory()
+function Register() {
+  const [loginData, setLoginData] = useState({});
+  const navigate = useNavigate();
+
+  const { user, registerUser, authError } = useAuth();
+
+  const handleOnBlur = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
+
+    const newLoginData = { ...loginData };
+    newLoginData[field] = value;
+
+    setLoginData(newLoginData);
+  };
+
+  const handleSignInSubmit = (e) => {
+    if (loginData.password !== loginData.confirmPassword) {
+      alert("Password didn't matched!");
+      return;
+    }
+    registerUser(loginData.email, loginData.password, loginData.name, navigate);
+    e.preventDefault();
+  };
   return (
     <div className="cardBackGround">
       <Container>
@@ -21,56 +38,62 @@ function Register(props) {
               <p className="text-center w-50">
                 Please fill in this form to create an account!
               </p>
-              <Form>
-                <Form.Group id="name">
+              <Form onSubmit={handleSignInSubmit}>
+                <Form.Group onBlur={handleOnBlur} id="name">
                   <Form.Label>User Name</Form.Label>
                   <Form.Control
                     className="mb-2 w-50"
                     type="text"
                     Placeholder="Enter Your Name"
-                    ref={nameRef}
                     required
                   ></Form.Control>
                 </Form.Group>
-                <Form.Group id="email">
+                <Form.Group onBlur={handleOnBlur} id="email">
                   <Form.Label>Email</Form.Label>
                   <Form.Control
                     className="mb-2 w-50"
                     Placeholder="Enter Your Email"
-                    ref={emailRef}
                     required
                   ></Form.Control>
                 </Form.Group>
-                <Form.Group id="password">
+                <Form.Group onBlur={handleOnBlur} id="password">
                   <Form.Label>Password</Form.Label>
                   <Form.Control
                     className="mb-2 w-50"
                     Placeholder="Enter Your Password"
-                    ref={passwordRef}
                     required
                   ></Form.Control>
                 </Form.Group>
-                <Form.Group id="ConfirmPassword">
+                <Form.Group onBlur={handleOnBlur} id="ConfirmPassword">
                   <Form.Label>ReType Password</Form.Label>
                   <Form.Control
                     className="mb-2 w-50"
                     Placeholder="  Password Confirmation"
-                    ref={passwordConfirmRef}
                     required
                   ></Form.Control>
                 </Form.Group>
                 <Button className="cardBtn w-50 mt-2" type="submit">
-                  SignUp
+                  SIGNUP
                 </Button>
+                <Link to="/login" style={{ textDecoration: "none" }}>
+                  <Button>Already Registered? Please SIGN IN</Button>
+                </Link>
               </Form>
-              <p className="w-50 d-flex ">
-                Already have an Account?<b>LogIn</b>
-              </p>
+              {/* <p className="w-50 d-flex ">
+                Already have an Account?<Link to="/login">Log In</Link>
+              </p> */}
             </Card.Body>
+            {user?.email && (
+              <Alert variant="filled" severity="success">
+                Registration Successfully DOne.
+              </Alert>
+            )}
+            {authError && (
+              <Alert variant="filled" severity="error">
+                {authError}
+              </Alert>
+            )}
           </div>
-          {/* <div >
-        Already have an Account?<b>LogIn</b>
-      </div> */}
         </Card>
       </Container>
     </div>
