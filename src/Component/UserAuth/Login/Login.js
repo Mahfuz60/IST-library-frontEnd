@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Form, Button, Card, Alert, Container } from "react-bootstrap";
+import {
+  Form,
+  Button,
+  Card,
+  Alert,
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
@@ -29,55 +37,56 @@ function Login(props) {
   // };
 
   return (
-    <div className="cardBackGround">
+    <section className="cardBackGround ">
       <Container>
-        <Card className="w-80 regContainer">
-          <div className="row d-flex aline-item-center justify-content-center mt-4 mb-2 px-5 ">
-            <Card.Body className=" col-md-8">
-              <h2 className="text-center w-50 ">LogIn</h2>
+        <Row>
+          <Col xs={5}>
+            <Card className="regContainer mt-5">
+              <Card.Body>
+                <h2 className="text-center">LogIn</h2>
 
-              <Form onSubmit={handleSignInSubmit}>
-                <Form.Group onChange={handleOnChange} id="email">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control
-                    className="mb-2 w-50"
-                    Placeholder="Enter Your Email"
-                    required
-                  ></Form.Control>
-                </Form.Group>
-                <Form.Group onChange={handleOnChange} id="password">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password"
-                    className="mb-2 w-50"
-                    Placeholder="Enter Your Password"
-                    required
-                  ></Form.Control>
-                </Form.Group>
+                <Form onSubmit={handleSignInSubmit}>
+                  <Form.Group onBlur={handleOnChange} id="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      className=""
+                      Placeholder="Enter Your Email"
+                      required
+                    ></Form.Control>
+                  </Form.Group>
+                  <Form.Group onBlur={handleOnChange} id="password">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                      type="password"
+                      className=""
+                      Placeholder="Enter Your Password"
+                      required
+                    ></Form.Control>
+                  </Form.Group>
 
-                <Button className="cardBtn w-50 mt-2" type="submit">
-                  LOGIN
-                </Button>
-              </Form>
-              <p className="w-50  d-block mt-3 ">
-                <Link to="/register" style={{ textDecoration: "none" }}>
-                  <Button>New User? Please REGISTER</Button>
-                </Link>
-              </p>
-            </Card.Body>
-          </div>
-          {user?.email && (
-            <Alert variant="filled" severity="success">
-              You're Signed In.
-            </Alert>
-          )}
-          {authError && (
-            <Alert variant="filled" severity="error">
-              {authError}
-            </Alert>
-          )}
-        </Card>
+                  <Button className="cardBtn " type="submit">
+                    LOGIN
+                  </Button>
+                  <Link to="/register">
+                    <Button>New User? Please REGISTER</Button>
+                  </Link>
+                </Form>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        {user?.email && (
+          <Alert variant="filled" severity="success">
+            You're Signed In.
+          </Alert>
+        )}
+        {authError && (
+          <Alert variant="filled" severity="error">
+            {authError}
+          </Alert>
+        )}
       </Container>
-    </div>
+    </section>
   );
 }
 

@@ -6,8 +6,8 @@ import BbaBook from "./BbaBook/BbaBook";
 
 function Books(props) {
   return (
-    <div className="backgroundBooks">
-      <div className="container">
+    <div className="backgroundBooks ">
+      <div>
         <EceBook></EceBook>
         <CseBook></CseBook>
         <BbaBook></BbaBook>

@@ -67,7 +67,7 @@ function BbaBook(props) {
             BBA BookList
           </h2>
         </div>
-        <div className="row justify-content-center d-flex gy-3">
+        <div className="row justify-content-center d-flex  py-3 gy-3">
           {bbaBooks?.map((book) => (
             <BbaBookCart book={book}></BbaBookCart>
           ))}

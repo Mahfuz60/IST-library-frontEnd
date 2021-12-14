@@ -1,9 +1,6 @@
 import React from "react";
-import { Button, Form, FormControl, Carousel } from "react-bootstrap";
+import { Button, Form, FormControl } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import slide1 from "../../images/slide1.jpeg";
-import slide2 from "../../images/slide2.jpeg";
-import slide3 from "../../images/slide3.jpeg";
 
 import "./HomePage.css";
 
@@ -32,49 +29,20 @@ function HomePage(props) {
             Search
           </Button>
         </Form>
-        <div className="container row  my-5">
-          <div className="homeButton  text-center">
-            <div className="d-flex px-5 ">
-              <div>
-                <Link to="books/eceBooks">
-                  <button>ECE</button>
-                </Link>
+        <div className=" row   my-5">
+          <div className="homeButton   text-center">
+            <Link to="books/eceBooks">
+              <button>ECE</button>
+            </Link>
 
-                <Link to="books/cseBooks">
-                  <button>CSE</button>
-                </Link>
+            <Link to="books/cseBooks">
+              <button>CSE</button>
+            </Link>
 
-                <Link to="books/bbaBooks">
-                  <button>BBA</button>
-                </Link>
-              </div>
-            </div>
+            <Link to="books/bbaBooks">
+              <button>BBA</button>
+            </Link>
           </div>
-        </div>
-        <div>
-          {/* <Carousel variant="light">
-            <Carousel.Item>
-              <img
-                className="d-block w-70 h-25"
-                src={slide1}
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-70 h-25 "
-                src={slide2}
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-70 h-35"
-                src={slide3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel> */}
         </div>
       </div>
     </section>

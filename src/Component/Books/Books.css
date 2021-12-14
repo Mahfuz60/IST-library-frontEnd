@@ -3,4 +3,36 @@
   position: relative;
   height: auto;
   width: auto !important;
+  margin-left: 12px;
+}
+.card-group {
+  height: 500px;
+  width: 400px;
+  background-color: rgba(226, 209, 192, 0.664);
+  border-radius: 30px;
+}
+.cardPic {
+  height: 320px;
+  width: 220px;
+  padding-top: 10px;
+}
+.cardHeader h6 {
+  color: rgb(22, 22, 22);
+  font-weight: 800;
+}
+.downloadButton {
+  background-color: rgb(221, 97, 8)!important;
+  width: 200px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border:none;
+  padding:5px;
+  border-radius:10px;
+  font-weight: 500;
+
+}
+.downloadButton:hover {
+  color: white !important;
+  background-color: rgb(50, 97, 3)!important;
+  font-weight: 400;
 }

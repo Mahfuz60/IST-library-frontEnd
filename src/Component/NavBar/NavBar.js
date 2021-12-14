@@ -35,9 +35,9 @@ function NavBar() {
               Books
             </NavLink>
 
-            {/* <NavLink  to="/about" className="navLink">
+            <NavLink href="#about"  to="/about" className="navLink">
               About
-            </NavLink> */}
+            </NavLink>
 
             <NavLink to="/login" className="navLink">
               Login

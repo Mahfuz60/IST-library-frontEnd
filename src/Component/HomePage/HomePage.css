@@ -1,7 +1,7 @@
 .background {
   background-image: url(../../images/backgroundImg.jpg) !important;
   position: relative;
-  height: 150vh;
+  height: 100vh;
   width: auto !important;
 }
 #searchBar {
@@ -15,16 +15,16 @@
 }
 .homeButton button {
   padding: 15px;
-  width: 250px;
+  width: 200px;
   margin-right: 10px;
-  border-radius:150px;
-  background-color: rgb(144, 145, 145);
+  border-radius: 150px;
+  background-color:grey;
   font-size: 20px;
-  color: white;
+  color: rgb(10, 10, 10);
   font-weight: bold;
   border-bottom: 0px;
 }
 .homeButton button:hover {
-  background-color: rgb(240, 165, 3);
-  color: black;
+  background-color: rgb(240, 80, 16);
+  color: rgb(248, 245, 245);
 }

@@ -7,8 +7,6 @@ import circuit from "../../../images/circuit.jpg";
 import Ansi from "../../../images/Ansi.jpg";
 import calculus from "../../../images/calculus.jpg";
 import "../Books.css";
-import NavBar from "../../NavBar/NavBar";
-import Footer from "../../Footer/Footer";
 
 function CseBook(props) {
   const cseBooks = [
@@ -69,7 +67,7 @@ function CseBook(props) {
             CSE BookList
           </h2>
         </div>
-        <div className="row justify-content-center d-flex">
+        <div className="row justify-content-center d-flex gy-3">
           {cseBooks?.map((book) => (
             <CseBookCart book={book}></CseBookCart>
           ))}

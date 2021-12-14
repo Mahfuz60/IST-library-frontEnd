@@ -1,0 +1,10 @@
+.backgroundAcademic{
+    background-color: #cfd1d3!important;
+}
+.backgroundAcademic h2{
+    color:rgb(228, 68, 9);
+    font-weight:500;
+}
+.backgroundAcademic h5{
+    border-bottom: 3px solid rgb(228, 68, 9);
+}

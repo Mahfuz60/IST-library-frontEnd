@@ -7,8 +7,6 @@ import dataCom from "../../../images/dataCom.jpg";
 import calculus from "../../../images/calculus.jpg";
 import EceBookCart from "./EceBookCart";
 import "../Books.css";
-import NavBar from "../../NavBar/NavBar";
-import Footer from "../../Footer/Footer";
 
 function EceBook(props) {
   const eceBooks = [
@@ -64,14 +62,13 @@ function EceBook(props) {
 
   return (
     <section className=" backgroundBooks">
-
       <div className="mt-3 pt-3">
         <div className="text-center">
           <h2 className="text-light " style={{ fontSize: "65px" }}>
             ECE BookList
           </h2>
         </div>
-        <div className="row justify-content-center d-flex">
+        <div className="row justify-content-center d-flex py-3 gy-3">
           {eceBooks?.map((book) => (
             <EceBookCart to="/eceBook" book={book}></EceBookCart>
           ))}
