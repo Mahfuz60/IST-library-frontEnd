@@ -34,17 +34,19 @@ function NavBar() {
             <NavLink to="/books/allBooks" className="navLink">
               Books
             </NavLink>
-
-            <NavLink href="#about"  to="/about" className="navLink">
-              About
+            <NavLink to="/dashboard" className="navLink">
+              Dashboard
             </NavLink>
+
+            {/* <NavLink href="#about"  to="/about" className="navLink">
+              About
+            </NavLink> */}
 
             <NavLink to="/login" className="navLink">
               Login
             </NavLink>
           </Nav>
         </Navbar.Collapse>
-       
       </Container>
     </Navbar>
   );

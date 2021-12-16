@@ -1,0 +1,17 @@
+.CseLabBackground{
+    background-color: rgba(182, 174, 164, 0.459);
+    height:90vh;
+}
+.imgCom{
+    height:400px;
+    width: 500px;
+
+}
+.CseLabBackground h1{
+    text-align:center;
+    padding: 15px;
+    color: rgb(228, 68, 9);
+    font-weight: bold;
+    
+    
+}

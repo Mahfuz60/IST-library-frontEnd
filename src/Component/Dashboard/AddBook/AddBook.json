@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Electrical Technology",
+    "author": "B.L.Theraja & A.K Theraja",
+    "img": "https://i.ibb.co/ssMYkxR/Electrical.jpg",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1Wd1ov_Ml3rz2G8TvamsMPJW8YAkcWXbd"
+  },
+  {
+    "name": "Introductory Circuit Analysis",
+    "img": "https://i.ibb.co/P4v6TW9/circuit.jpg",
+    "author": "Boylestad",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1hdtZN3qEzS39CjByDSw-NB48V55K2tWG"
+  },
+  {
+    "name": "Data Communication and Networking",
+    "img": "https://i.ibb.co/2vnjbjm/dataCom.jpg",
+    "author": "Forouzan",
+    " pdfBook": "https://drive.google.com/uc?export=download&id=12Cc0Ru1n-gn9SQ6EtvgLMDcingzV0huk"
+  },
+  {
+    "name": "Biomedical Instrumentation",
+    "img": "https://i.ibb.co/tXSS23D/biomedical.jpg",
+    "author": "R.S. Khandpur",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1IMefsYigxWWGGvh549RgKgs1dngvuiCk"
+  },
+  {
+    "name": "Programming In ANSI C",
+    "img": "https://i.ibb.co/9N4rK8F/Ansi.jpg",
+    " author": "Balagurusamy",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1ScV9vU-j28a9NlVuJudMnCP04CTUosaD"
+  },
+  {
+    " name": "Integral Calculus",
+    "img": "https://i.ibb.co/jWvG1rX/calculus.jpg",
+    "author": "B.C. Das & B.N. Mukherjee",
+    " pdfBook": "https://drive.google.com/uc?export=download&id=13BpNFHYoRlY_jEabfgOqUG0h-MfnZkIe"
+  },
+  {
+    "id": 8,
+    "name": "Introductory Circuit Analysis",
+    "img": "https://i.ibb.co/P4v6TW9/circuit.jpg",
+    "author": "Boylestad",
+    " pdfBook": "https://drive.google.com/uc?export=download&id=1hdtZN3qEzS39CjByDSw-NB48V55K2tWG"
+  },
+  {
+    "name": "Object Oriented Programming",
+    "img": "https://i.ibb.co/wpkzcFm/Object-Pic.jpg",
+    "author": "Balagurusamy",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1XaYuoLAFE7uTqqJvJWJu9OEeQAQxdZ2Z"
+  },
+  {
+    "name": "Data Structure Algorithm",
+    "img": "https://i.ibb.co/tXSS23D/biomedical.jpg",
+    "author": "Robers L Kruse",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1RdEqAYjgi1WHIixSdYuxpVris8MULbhQ"
+  },
+
+  {
+    
+    " name": "Introduction to Computer",
+    "img": "https://i.ibb.co/JB6dFvv/computer.png",
+    "author": "Peter Norton",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1qFdmTu4EhEXmNxNhqRGSSXFCHwK5qZx3"
+  },
+  {
+    
+    "name": "Fundamentals of Corporate Finance",
+    "img": "https://i.ibb.co/nBV4CxN/fundamental.png",
+    "author": "Richard A. Brealey",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1xISPTT5MoBl03iY3FUsYJPc8myihMIhY"
+  },
+  {
+    "name": "Marketing Management",
+    "img": "https://i.ibb.co/L9DKqMT/marketing.png",
+    "author": "Philip Kotler",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1XFn_M-x6EFMVPmYK4ch2bPi9EGrmedrF"
+  },
+  {
+    
+    "name": "Economics Micro & Macro",
+    "img": "https://i.ibb.co/643b0BL/economics.jpg",
+    "author": "Ron PirayOff",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1JyINDOflGu7L4PuRVNwy6smd-zyGSZT9"
+  },
+  {
+    "name": "Financial Management and Real Options",
+    "img": "https://i.ibb.co/56sMrQ5/financial.jpg",
+    "author": "Jack Broyles",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1W-J0PtqnCnpkfyU8QBwjh7DBJ8qH_Mck"
+  },
+  {
+    "name": " Environmental Science and Management",
+    "img": "https://i.ibb.co/85RDqcR/statistics.jpg",
+    "author": "Bryan F.J. Manly",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1HHuAaki957pp1gNiuvZQsyPvF4-xeppc"
+  }
+]

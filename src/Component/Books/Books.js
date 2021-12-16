@@ -3,14 +3,19 @@ import EceBook from "./EceBook/EceBook";
 import "../../Component/Books/Books.css";
 import CseBook from "./CseBook/CseBook";
 import BbaBook from "./BbaBook/BbaBook";
+import AllBooks from "../AllBooks/AllBooks";
 
 function Books(props) {
+
   return (
     <div className="backgroundBooks ">
       <div>
-        <EceBook></EceBook>
+        {/* <EceBook></EceBook>
         <CseBook></CseBook>
-        <BbaBook></BbaBook>
+        <BbaBook></BbaBook> */}
+        <AllBooks></AllBooks>
+
+        
       </div>
     </div>
   );

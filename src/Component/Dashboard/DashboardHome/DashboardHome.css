@@ -1,0 +1,20 @@
+.dashboardBackground{
+    background-image: url(../../../images/dashboardbackground.jpg);
+    height:100%;
+    width: 100%;
+    position:fixed;
+}
+.dashboardBackground h2{
+    text-align: center;
+    background-color: rgb(4, 44, 129);
+    height:80px;
+    width: 80%;
+    padding:10px;
+    color:white;
+    font-weight: bold;
+    margin-left:160px;
+
+
+
+
+}

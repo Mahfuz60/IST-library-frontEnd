@@ -1,0 +1,17 @@
+.eceLabBackground{
+    background-color: rgba(200, 203, 206, 0.37);
+    height:90vh;
+}
+.imgEce{
+    height:400px;
+    width: 500px;
+
+}
+.eceLabBackground h1{
+    text-align:center;
+    padding: 15px;
+    color: rgb(228, 68, 9);
+    font-weight: bold;
+    
+    
+}

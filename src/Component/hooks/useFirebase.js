@@ -72,24 +72,6 @@ const useFirebase = () => {
       });
   };
 
-  // const signInWithGoogle = (location, history) => {
-  //   setIsLoading(true);
-  //   signInWithPopup(auth, googleProvider)
-  //     .then((result) => {
-  //       const user = result.user;
-  //       // saveUserInfo(user.email, user.displayName, "PUT");
-  //       const destination = location?.state?.from || "/";
-  //       history.replace(destination);
-  //       setAuthError("");
-  //     })
-  //     .catch((error) => {
-  //       setAuthError(error.message);
-  //     })
-  //     .finally(() => {
-  //       setIsLoading(false);
-  //     });
-  // };
-
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -106,11 +88,11 @@ const useFirebase = () => {
     return () => unsubscribed;
   }, [auth]);
 
-  //   useEffect(() => {
-  //     fetch(`https://guarded-ocean-83766.herokuapp.com/users/${user.email}`)
-  //       .then((response) => response.json())
-  //       .then((jsonData) => setAdmin(jsonData.admin));
-  //   }, [user.email]);
+  // useEffect(() => {
+  //   fetch(`https://enigmatic-cliffs-56694.herokuapp.com/users/${user.email}`)
+  //     .then((response) => response.json())
+  //     .then((jsonData) => setAdmin(jsonData.admin));
+  // }, [user.email]);
 
   const logOut = () => {
     setIsLoading(true);
@@ -129,16 +111,13 @@ const useFirebase = () => {
 
   const saveUserInfo = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch(`https://guarded-ocean-83766.herokuapp.com/users`, {
-        method: method,
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(user)
-    })
-        .then(() => {
-
-        })
+    fetch(`https://enigmatic-cliffs-56694.herokuapp.com/users`, {
+      method: method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    }).then(() => {});
   };
 
   return {

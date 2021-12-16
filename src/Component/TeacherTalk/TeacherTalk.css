@@ -1,26 +1,23 @@
-.teacherImg{
-    height:auto;
-    width:100vh;
+.teacherImg {
+  height: auto;
+  width: 100vh;
 }
-.teacherBackground{
-    background-color: rgba(200, 203, 206, 0.37);
+.teacherBackground {
+  background-color: rgba(200, 203, 206, 0.37);
 }
-.teacherBackground h1{
-    text-align:center;
-    padding: 15px;
-    text-decoration: underline ;
-    text-decoration-color: rgb(228, 68, 9);
-    font-weight: bold;
-    
-    
+.teacherBackground h1 {
+  text-align: center;
+  padding: 15px;
+  color: rgb(37, 5, 112);
+  text-decoration: underline;
+  font-weight: bold;
 }
-.teacherBackground h2{
-    font-weight: 600!important;
-    color: rgb(228, 68, 9);
-
+.teacherBackground h2 {
+  font-weight: 600 !important;
+  color: rgb(228, 68, 9);
 }
-.teacherBackground h4{
-    color: rgb(228, 68, 9);
-    text-decoration: none;
-    font-weight:500;
+.teacherBackground h4 {
+  color: rgb(228, 68, 9);
+  text-decoration: none;
+  font-weight: 500;
 }

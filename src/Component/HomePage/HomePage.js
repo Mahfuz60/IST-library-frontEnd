@@ -8,7 +8,7 @@ function HomePage(props) {
   return (
     <section id="home" className="background  py-5">
       <div className="container px-5 ">
-        <Form id="searchBar" className="d-flex py-2 ">
+        {/* <Form id="searchBar" className="d-flex py-2 ">
           <FormControl
             id="inputSearch"
             type="search"
@@ -16,7 +16,7 @@ function HomePage(props) {
             className="md-2 w-40 "
             aria-label="Search"
           />
-          <Button
+          <Button onClick="searchBook()"
             style={{
               marginLeft: "8px",
               padding: "10px",
@@ -28,7 +28,7 @@ function HomePage(props) {
           >
             Search
           </Button>
-        </Form>
+        </Form> */}
         <div className=" row   my-5">
           <div className="homeButton   text-center">
             <Link to="books/eceBooks">

@@ -1,19 +1,17 @@
 .navBar {
-  background-color:rgb(241, 241, 233);
+  background-color: rgb(238, 238, 213);
 }
 .navLink {
   color: rgb(10, 7, 7) !important;
   text-decoration: none;
   font-size: 25px;
   margin-right: 30px;
-  font-weight:bold;
+  font-weight: bold;
 }
 .navLink:hover {
   color: #f5f4f1 !important;
-  border-radius:15px!important;
+  border-radius: 15px !important;
   font-weight: bold;
-  border-bottom: 2px solid rgb(251, 252, 250)!important;
-  background-color:rgb(4, 81, 117);
-  
-  
+  border-bottom: 2px solid rgb(251, 252, 250) !important;
+  background-color: rgb(4, 81, 117);
 }

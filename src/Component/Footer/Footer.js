@@ -9,11 +9,7 @@ function Footer() {
   return (
     <section className="footerBackground">
       <Container fluid>
-        <Row fluid className="top">
-          <h5>
-            <b>Developed By:Md. Redoy Ahmed | Md. Mahfuz Alam </b>
-          </h5>
-        </Row>
+       
 
         <Row id="about" className="body">
           <Col xs={3} className="col">
@@ -132,6 +128,11 @@ function Footer() {
               </li>
             </ul>
           </Col>
+        </Row>
+        <Row fluid className="top">
+          <h5>
+            <b>Developed By: Md. Mahfuz Alam||Md. Redoy Ahmed  </b>
+          </h5>
         </Row>
 
         <Row className="bottom">

@@ -16,7 +16,7 @@ function Register() {
   const [loginData, setLoginData] = useState({});
   const navigate = useNavigate();
 
-  const { user, registerUser, authError } = useAuth;
+  const { user, registerUser, authError } = useAuth();
 
   const handleOnBlur = (e) => {
     const field = e.target.name;
@@ -43,50 +43,59 @@ function Register() {
           <Col xs={5}>
             <Card className="regContainer mt-5">
               <Card.Body>
-                <h2 className="text-center">SignUp</h2>
-                <p className="text-center">
+                <h2 className="text-center">SIGNUP</h2>
+                <h6 className="text-center">
                   Please fill in this form to create an account!
-                </p>
+                </h6>
+
                 <Form onSubmit={handleSignInSubmit}>
-                  <Form.Group onBlur={handleOnBlur} id="name">
-                    <Form.Label>User Name</Form.Label>
+                  <Form.Group className="py-2">
                     <Form.Control
-                      className=""
                       type="text"
-                      Placeholder="Enter Your Name"
+                      onBlur={handleOnBlur}
+                      id="user-name"
+                      placeholder="Enter Your Name"
+                      name="name"
                       required
                     ></Form.Control>
                   </Form.Group>
-                  <Form.Group onBlur={handleOnBlur} id="email">
-                    <Form.Label>Email</Form.Label>
+                  <Form.Group className="py-2">
                     <Form.Control
-                      className=""
-                      Placeholder="Enter Your Email"
+                      type="email"
+                      placeholder="Enter Your Email"
+                      onBlur={handleOnBlur}
+                      name="email"
+                      id="user-register-email"
                       required
                     ></Form.Control>
                   </Form.Group>
-                  <Form.Group onBlur={handleOnBlur} id="password">
-                    <Form.Label>Password</Form.Label>
+                  <Form.Group className="py-2">
                     <Form.Control
                       type="password"
-                      Placeholder="Enter Your Password"
+                      id="user-register-password"
+                      placeholder="Enter Your Password"
+                      onBlur={handleOnBlur}
+                      name="password"
                       required
                     ></Form.Control>
                   </Form.Group>
-                  <Form.Group id="ConfirmPassword">
-                    <Form.Label>ReType Password</Form.Label>
-                    <Form.Control type="password"
-                      className=""
-                      Placeholder="  Password Confirmation"
+                  <Form.Group>
+                    <Form.Control
+                      type="password"
+                      id="user-password-confirm"
+                      name="confirmPassword"
+                    placeholder="ReType Password"
+                      onBlur={handleOnBlur}
                       required
                     ></Form.Control>
                   </Form.Group>
                   <Button className="cardBtn " type="submit">
                     SIGNUP
                   </Button>
-                  <Link to="/login">
-                    <Button>Already Registered? Please SIGN IN</Button>
+                  <Link className="btnPara" to="/login">
+                    <p>ALREADY REGISTER? PLEASE LOGIN</p>
                   </Link>
+                 
                 </Form>
               </Card.Body>
             </Card>
@@ -94,7 +103,7 @@ function Register() {
         </Row>
         {user?.email && (
           <Alert variant="filled" severity="success">
-            Registration Successfully DOne.
+            Registration Successfully Done.
           </Alert>
         )}
         {authError && (

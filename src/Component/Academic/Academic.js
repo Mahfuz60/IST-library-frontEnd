@@ -7,7 +7,7 @@ function Academic(props) {
     <section className="backgroundAcademic py-5">
       <Container>
         <Row>
-          <h2 className="text-center py-4">ACADEMIC PROGRAMS</h2>
+          <h1 className="text-center py-4">ACADEMIC PROGRAMS</h1>
           <Col xs={3}>
             <h5 className="text-center py-4">Undergraduate Programs</h5>
             <ul>
