@@ -8,7 +8,7 @@ import Academic from "../Academic/Academic";
 import CentralLibrary from "../CentralLibrary/CentralLibrary";
 import ElectronicsLab from "../ElectronicsLab/ElectronicsLab";
 import ComputerLab from "../ComputerLab/ComputerLab";
-import MakeAdmin from "../Dashboard/MakeAdmin/MakeAdmin";
+
 
 function Home(props) {
   return (
@@ -21,7 +21,7 @@ function Home(props) {
       <ElectronicsLab></ElectronicsLab>
       <ComputerLab></ComputerLab>
       <BookCounter></BookCounter>
-      <MakeAdmin></MakeAdmin>
+     
       <Footer></Footer>
     </div>
   );

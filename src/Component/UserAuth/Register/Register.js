@@ -29,18 +29,18 @@ function Register() {
   };
 
   const handleSignInSubmit = (e) => {
+    e.preventDefault();
     if (loginData.password !== loginData.confirmPassword) {
       alert("Password didn't matched!");
       return;
     }
     registerUser(loginData.email, loginData.password, loginData.name, navigate);
-    e.preventDefault();
   };
   return (
     <section className="cardBackGround ">
       <Container>
         <Row>
-          <Col xs={5}>
+          <Col xs={8}>
             <Card className="regContainer mt-5">
               <Card.Body>
                 <h2 className="text-center">SIGNUP</h2>
@@ -84,7 +84,7 @@ function Register() {
                       type="password"
                       id="user-password-confirm"
                       name="confirmPassword"
-                    placeholder="ReType Password"
+                      placeholder="ReType Password"
                       onBlur={handleOnBlur}
                       required
                     ></Form.Control>
@@ -95,7 +95,6 @@ function Register() {
                   <Link className="btnPara" to="/login">
                     <p>ALREADY REGISTER? PLEASE LOGIN</p>
                   </Link>
-                 
                 </Form>
               </Card.Body>
             </Card>

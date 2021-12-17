@@ -13,7 +13,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
-  const { user, loginUser, isLoading, authError } = useAuth();
+  const { user, loginUser, authError } = useAuth();
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const Login = () => {
     <section className="cardBackGround ">
       <Container>
         <Row>
-          <Col xs={5}>
+          <Col xs={8}>
             <Card className="regContainer mt-5">
               <Card.Body>
                 <h2 className="text-center py-3">LOGIN</h2>

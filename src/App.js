@@ -12,7 +12,6 @@ import AuthProvider from "./Component/Context/AuthProvider/AuthProvider";
 import AddBook from "./Component/Dashboard/AddBook/AddBook";
 import MakeAdmin from "./Component/Dashboard/MakeAdmin/MakeAdmin";
 
-
 function App() {
   return (
     <AuthProvider>

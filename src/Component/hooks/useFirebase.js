@@ -4,8 +4,6 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  GoogleAuthProvider,
-  signInWithPopup,
   onAuthStateChanged,
   updateProfile,
   signOut,
@@ -21,7 +19,7 @@ const useFirebase = () => {
   const [admin, setAdmin] = useState(false);
 
   const auth = getAuth();
-  const googleProvider = new GoogleAuthProvider();
+  // const googleProvider = new GoogleAuthProvider();
 
   const registerUser = (email, password, name, navigate) => {
     setIsLoading(true);
@@ -88,11 +86,11 @@ const useFirebase = () => {
     return () => unsubscribed;
   }, [auth]);
 
-  // useEffect(() => {
-  //   fetch(`https://enigmatic-cliffs-56694.herokuapp.com/users/${user.email}`)
-  //     .then((response) => response.json())
-  //     .then((jsonData) => setAdmin(jsonData.admin));
-  // }, [user.email]);
+  useEffect(() => {
+    fetch(`https://enigmatic-cliffs-56694.herokuapp.com/users/${user.email}`)
+      .then((response) => response.json())
+      .then((jsonData) => setAdmin(jsonData.admin));
+  }, [user.email]);
 
   const logOut = () => {
     setIsLoading(true);
