@@ -1,36 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./AddBook.css";
-//  import useAuth from "../../hooks/useAuth";
 
-const AddBook = (data) => {
+const AddBook = () => {
+  const [data, setData] = useState({});
+  console.log(data);
   const {
     register,
-    handleSubmit,
-    reset,
+    // handleSubmit,
     formState: { errors },
   } = useForm();
 
-  // const { user } = useAuth();
-  const onSubmit = (data) => {
-    // console.log("Click");
-    const url = `https://enigmatic-cliffs-56694.herokuapp.com//books`;
+  const getValue = (e) => {
+    const getData = { ...data };
+    getData[e.target.name] = e.target.value;
+    setData(getData);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const url = `https://enigmatic-cliffs-56694.herokuapp.com/books`;
+
     fetch(url, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: data.bookName,
+        author: data.author,
+        img: data.img,
+        pdfBook: data.pdfBookLink,
+        designation: data.designation,
+      }),
     })
       .then((response) => response.json())
       .then((result) => {
-        // console.log(result);
-        if (result.insertedId) {
-          alert("Book is added successfully.");
-          reset();
+        if (result) {
+          alert("Book is Added");
         }
+        console.log(result);
+      })
+      .catch((error) => {
+        console.error(error);
       });
-    // console.log(data);
   };
 
   return (
@@ -38,43 +49,46 @@ const AddBook = (data) => {
       <div className="form">
         <h3>Add Books</h3>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="inputs">
+        <form onSubmit={handleSubmit} className="inputs">
           <input
+            onBlur={getValue}
             type="text"
-            placeholder="Department Name"
-            {...register("dept", { required: true })}
-          />
-          {/* {errors.dept && <span>Department Name is required</span>} */}
-
-          <input
-            type="text"
+            name="bookName"
             placeholder="Book Name"
             {...register("bookName", { required: true })}
           />
-          {/* {errors.bookName && <span>Book Name is required</span>} */}
+          {errors.bookName && <span>Book Name is required</span>}
 
           <input
             type="text"
+            onBlur={getValue}
+            name="author"
             placeholder="Author"
             {...register("author", { required: true })}
           />
-          {/* {errors.author && <span>Author is required</span>} */}
+          {errors.author && <span>Author is required</span>}
 
           <input
             type="text"
+            onBlur={getValue}
+            name="img"
             placeholder="Image Link"
-            {...register("image", { required: true })}
+            {...register("img", { required: true })}
           />
-          {/* {errors.image && <span>Image URL is required</span>} */}
-
+          {errors.image && <span>Image URL is required</span>}
           <input
             type="text"
+            onBlur={getValue}
+            name="pdfBookLink"
             placeholder="pdfBook Link"
-            {...register("pdfBook", { required: true })}
+            {...register("pdfBookLink", { required: true })}
           />
-          {/* {errors.pdfBook && <span>PdfBook is required</span>} */}
-
-          <input type="submit" value="Add Books" />
+          {errors.pdfBook && <span>PdfBook is required</span>}
+          <input
+            type="submit"
+            value="Add Books"
+            onClick={() => console.log("Click")}
+          />
         </form>
       </div>
     </section>

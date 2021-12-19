@@ -1,0 +1,54 @@
+[
+ 
+  {
+    "name": "Modern Physics",
+    "img": "https://i.ibb.co/RBZZwVR/modern-Physics.png",
+    "author": "William Sevin",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1hdtZN3qEzS39CjByDSw-NB48V55K2tWG"
+  },
+  {
+    "name": "Mobile Antenna System",
+    "img": "https://i.ibb.co/ypDbz2X/mobile-Antena.png",
+    "author": "Kyohei FUjimoto",
+    " pdfBook": "https://drive.google.com/uc?export=download&id=1P2jvJCxxeQQ9aoFy7Y50axpAk58yRTrD"
+  },
+  
+  
+
+  {
+    "name": "High Speed Optical Fiber",
+    "img": "https://i.ibb.co/VqqbGNv/high-Speed.png",
+    "author": "Jianjun Yu • Nan Chi",
+    "pdfBook": "https://drive.google.com/file/d/1_heJy7vTeWo4Dm7sdZ8DzmxOcDPEysS7/view?usp=sharing"
+  },
+  {
+    "name": "Analog & Digital Circuit",
+    "img": "https://i.ibb.co/RcyR46n/analog-To-Digital.jpg",
+    "author": "Jerry Luecke",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1fyIfa2AXBORIERTcQW5x-mevtRIXP0sp"
+  },
+  {
+    "name": "Fundamental of Physics",
+    "img": "https://i.ibb.co/6tvQchw/fundamental.jpg",
+    "author": "Jear Walker",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1Bcm1AI85rjtt8kvsWz1CFGOdayaW6zso"
+  },
+  {
+    "name": "Analog & Digital Control System",
+    "img": "https://i.ibb.co/kqtnwTf/control-System.jpg",
+    "author": "Chi-Tisong Chen",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1PNTMCKHLSEd_57wU12vECb-TRxdNPwKE"
+  },
+  {
+    "name": "Linear Control System",
+    "img": "https://i.ibb.co/wRdqR8J/linear-Control.png",
+    "author": "John J. D`Azzo",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1h8cT3GiqCs5Iy2xPoDk0xKtrfaIrlwM9"
+  },
+  {
+    "name": "Mobile Antenna System",
+    "img": "https://i.ibb.co/ypDbz2X/mobile-Antena.png",
+    "author": "Kyohei Fujimoto",
+    "pdfBook": "https://drive.google.com/uc?export=download&id=1P2jvJCxxeQQ9aoFy7Y50axpAk58yRTrD"
+  }
+]

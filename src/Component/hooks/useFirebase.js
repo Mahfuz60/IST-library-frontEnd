@@ -19,7 +19,6 @@ const useFirebase = () => {
   const [admin, setAdmin] = useState(false);
 
   const auth = getAuth();
-  // const googleProvider = new GoogleAuthProvider();
 
   const registerUser = (email, password, name, navigate) => {
     setIsLoading(true);
@@ -29,7 +28,7 @@ const useFirebase = () => {
         const newUser = { email, displayName: name };
         setUser(newUser);
         // save user to database
-        // saveUserInfo(email, name, "POST");
+        saveUserInfo(email, name, "POST");
 
         // send name to firebase after creation
         updateProfile(auth.currentUser, {

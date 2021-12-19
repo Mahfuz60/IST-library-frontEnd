@@ -1,20 +1,20 @@
 .bookCounter {
-  background-color: #6e91b35d;
+  background-color: #7274755d;
   height: 60vh;
 }
 .container h3 {
   font-size: 40px;
   font-weight: bold;
-  color: rgb(197, 58, 8);
+  color: rgb(238, 67, 5);
 }
 .bookCount h5 {
   font-size: 30px;
-  font-weight: 200;
+  font-weight:500;
   color: black;
 }
 .bookCount h4 {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
   color: black;
   border-bottom: 2px solid transparent;
 }

@@ -20,7 +20,7 @@ const DashboardSideBar = () => {
     >
       <ul className="list-unstyled">
         <li>
-          <Link to="/dashboard" className="text-white text-decoration-none">
+          <Link to="/dashboards" className="text-white text-decoration-none">
             <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
           </Link>
         </li>
@@ -30,7 +30,7 @@ const DashboardSideBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/addBooks"  className="text-white text-decoration-none">
+          <Link to="/addBooks" className="text-white text-decoration-none">
             <FontAwesomeIcon icon={faPlus} /> <span>Add Books</span>
           </Link>
         </li>

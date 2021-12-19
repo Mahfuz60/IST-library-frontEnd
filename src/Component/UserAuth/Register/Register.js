@@ -95,21 +95,22 @@ function Register() {
                   <Link className="btnPara" to="/login">
                     <p>ALREADY REGISTER? PLEASE LOGIN</p>
                   </Link>
+                 
                 </Form>
+                {user?.email && (
+                    <Alert variant="filled" severity="success" >
+                      <p className="alertColor">Registration Successfully Done.</p>
+                    </Alert>
+                  )}
+                  {authError && (
+                    <Alert variant="warning" severity="error" >
+                      {authError}
+                    </Alert>
+                  )}
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        {user?.email && (
-          <Alert variant="filled" severity="success">
-            Registration Successfully Done.
-          </Alert>
-        )}
-        {authError && (
-          <Alert variant="filled" severity="error">
-            {authError}
-          </Alert>
-        )}
       </Container>
     </section>
   );

@@ -69,21 +69,22 @@ const Login = () => {
                   <Link className="btnPara" to="/register">
                     <p>NEW USER? PLEASE REGISTER</p>
                   </Link>
+                 
                 </Form>
+                {user?.email && (
+                    <Alert variant="filled" severity="success">
+                      <p className="alertColor">You're logIn.</p>
+                    </Alert>
+                  )}
+                  {authError && (
+                    <Alert variant="filled" severity="error">
+                      {authError}
+                    </Alert>
+                  )}
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        {user?.email && (
-          <Alert variant="filled" severity="success">
-            You're Signed In.
-          </Alert>
-        )}
-        {authError && (
-          <Alert variant="filled" severity="error">
-            {authError}
-          </Alert>
-        )}
       </Container>
     </section>
   );

@@ -5,7 +5,7 @@ import "../Books.css";
 function BbaBookCart({ book }) {
   return (
     <div className=" col-md-4 col-sm-2  text-center ">
-      <CardGroup>
+      <CardGroup className='mx-2'>
         <Card className="justify-content-center card-group">
           <Card.Img
             className="img-fluid  cardPic"

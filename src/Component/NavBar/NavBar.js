@@ -3,8 +3,10 @@ import istLogo from "../../images/istLogo.png";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import useAuth from "../hooks/useAuth";
 
 function NavBar() {
+  const { user, logOut } = useAuth();
   return (
     <Navbar
       className="navBar"
@@ -34,17 +36,21 @@ function NavBar() {
             <NavLink to="/books/allBooks" className="navLink">
               Books
             </NavLink>
-            <NavLink to="/dashboard" className="navLink">
+            <NavLink to="/dashboards" className="navLink">
               Dashboard
             </NavLink>
-
-            {/* <NavLink href="#about"  to="/about" className="navLink">
-              About
-            </NavLink> */}
-
-            <NavLink to="/login" className="navLink">
-              Login
-            </NavLink>
+            {user.email && (
+              <span className="user-name">{user.email} </span>
+            )}
+            {user.email ? (
+              <button onClick={logOut} className="navLink">
+                SignOut
+              </button>
+            ) : (
+              <NavLink to="/login" className="navLink">
+                LOGIN
+              </NavLink>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

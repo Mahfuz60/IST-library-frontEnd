@@ -6,15 +6,16 @@
   margin-left: 12px;
 }
 .card-group {
-  height: 500px;
-  width: 400px;
+  height: 550px;
+  width: 350px;
   background-color: rgba(226, 209, 192, 0.664);
   border-radius: 30px;
 }
 .cardPic {
-  height: 320px;
-  width: 220px;
+  height: 380px;
+  width: 250px;
   padding-top: 10px;
+  position: center;
 }
 .cardHeader h6 {
   color: rgb(22, 22, 22);
