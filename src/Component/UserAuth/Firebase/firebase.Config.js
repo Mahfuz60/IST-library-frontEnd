@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDp4zJ3MyN_cD9rHnBO_AY3Wo_cZs6jSbU",
-  authDomain: "ist-online-library.firebaseapp.com",
-  projectId: "ist-online-library",
-  storageBucket: "ist-online-library.appspot.com",
-  messagingSenderId: "540366831722",
-  appId: "1:540366831722:web:e253d081e9fdb382930a13",
-  measurementId: "G-PY1MTVNCXC",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_Measurement_ID,
 };
 
 export default firebaseConfig;
